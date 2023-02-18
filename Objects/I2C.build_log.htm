@@ -19,14 +19,20 @@ CPU DLL:         S8051.DLL V3.100.0.0
 Dialog DLL:      DP51.DLL V2.62.0.1 
 <h2>Project:</h2>
 J:\Programing\51\Personal\I2C\I2C.uvproj
-Project File Date:  02/15/2023
+Project File Date:  02/16/2023
 
 <h2>Output:</h2>
 Build target 'Target 1'
+compiling AT24C02.c...
+I2C.h(1): warning C315: unknown #directive 'ifnedf'
+I2C.h(11): warning C312: misplaced endif control
+compiling Delay.c...
+compiling I2C.c...
+compiling LCD1602.c...
+LCD1602.c(3): warning C318: can't open file 'DS1302.h'
 compiling main.c...
 AT24C02.h(1): warning C315: unknown #directive 'ifnedf'
 AT24C02.h(7): warning C312: misplaced endif control
-compiling Delay.c...
 linking...
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_LCD_SHOWCHAR?LCD1602
@@ -37,8 +43,7 @@ linking...
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
     SEGMENT: ?PR?_LCD_SHOWBINNUM?LCD1602
 Program Size: data=38.0 xdata=0 code=853
-creating hex file from ".\Objects\I2C"...
-".\Objects\I2C" - 0 Error(s), 6 Warning(s).
+".\Objects\I2C" - 0 Error(s), 9 Warning(s).
 </pre>
 </body>
 </html>
